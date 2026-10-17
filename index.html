@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unique Central School – Kailuchak, Masaurhi, Patna</title>
+  <meta name="description" content="Unique Central School, Saraswati Lane, Kailuchak, Masaurhi (Patna). Admissions, notices, results, gallery and events.">
+  <link rel="icon" href="images/photo54.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#home">
+    <img src="images/photo54.jpg" alt="Unique Central School logo" width="48" height="48">
+    <span>Unique Central School</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#notice">Notice</a>
+    <a href="#result">Result</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#events">Events</a>
+    <a href="#sports">Sports</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact" class="nav-cta">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="motto">श्रमेव जयते</p>
+    <h1>Unique Central School</h1>
+    <p class="lead">Saraswati Lane, Kailuchak, Masaurhi (Patna). Learning with discipline, culture and care, from the first class to the last.</p>
+    <div class="btn-row">
+      <a class="btn" href="#admission">Admission Enquiry</a>
+      <a class="btn ghost" href="#notice">Latest Notices</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/photo1.jpg" alt="Unique Central School building" width="1024" height="761" loading="eager">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Our School</h2>
+  <div class="two-col">
+    <div>
+      <p>Unique Central School is an affiliated unit of Deshraran Singh Educational and Social Trust, located in Kailuchak, Masaurhi, Patna. Our motto, <strong>“श्रमेव जयते”</strong>, tells students that hard work leads to success.</p>
+      <p>We celebrate Independence Day and Republic Day every year, plant trees with our students, and teach children to respect the Constitution, the national heroes and each other.</p>
+    </div>
+    <div class="cards small">
+      <article><h3>Our Vision</h3><p>Confident, honest and capable students who serve their community.</p></article>
+      <article><h3>Our Mission</h3><p>Quality education, good values and equal chances for every child.</p></article>
+    </div>
+  </div>
+  <div class="cards">
+    <article><h3>Director’s Message</h3><p>Every child is born with a spark. Our work is to protect it, feed it and help it grow. At Unique Central School we want our students to be hard-working, honest and proud of their country. I thank the parents for their trust and the teachers for their effort.</p><p class="sign">– Director</p></article>
+    <article><h3>Principal’s Message</h3><p>Marks are important, but character matters more. We guide each child with discipline, kindness and regular practice. Come to school on time, finish your work and respect your teachers. Parents, please stay in touch with us, because a child grows best when home and school walk together.</p><p class="sign">– Principal</p></article>
+    <article><h3>Classes</h3><p>Nursery (N.C.), L.K.G., U.K.G. and Class I to Class VIII, in two sections (A and B) where needed.</p></article>
+  </div>
+</section>
+
+<!-- NOTICE -->
+<section id="notice" class="section alt">
+  <h2>Notice Board</h2>
+  <ul class="notice-list">
+    <li><time>16 Oct 2026</time><span>Add your latest notice here. New notices go on top.</span></li>
+    <li><time>15 Aug 2026</time><span>Independence Day was celebrated with fancy dress and tree plantation.</span></li>
+    <li><time>DD Mon YYYY</time><span>Exam schedule, holiday list or fee reminder.</span></li>
+  </ul>
+  <p class="note">To add a notice, copy one &lt;li&gt; line above and edit the date and text.</p>
+</section>
+
+<!-- RESULT -->
+<section id="result" class="section">
+  <h2>Results</h2>
+  <p>Session 2026–27, Term 1 (P.T.-1, P.T.-2 and S.A.-1). Choose the class, section and roll number to see the marksheet.</p>
+  <div class="result-box">
+    <label>Class
+      <select id="resClass"></select>
+    </label>
+    <label>Section
+      <select id="resSec"></select>
+    </label>
+    <label>Roll No.
+      <input type="text" id="resRoll" placeholder="e.g. 5" inputmode="numeric" maxlength="3">
+    </label>
+    <button class="btn" id="resBtn" type="button">View Result</button>
+  </div>
+  <p id="resMsg" class="note" aria-live="polite"></p>
+  <div id="resView" class="res-view" hidden>
+    <div class="btn-row">
+      <a class="btn ghost" id="resOpen" href="#" target="_blank" rel="noopener">Open full size</a>
+      <button class="btn ghost" id="resPrint" type="button">Print</button>
+    </div>
+    <img id="resImg" alt="Marksheet">
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" class="section alt">
+  <h2>Facilities</h2>
+  <div class="cards">
+    <article><h3>Airy Classrooms</h3><p>Bright, well-ventilated rooms with benches, whiteboards and fans.</p></article>
+    <article><h3>CCTV Security</h3><p>The campus is under CCTV watch for the safety of every child.</p></article>
+    <article><h3>Drinking Water</h3><p>Clean drinking water is available for all students.</p></article>
+    <article><h3>Open Playground</h3><p>A large open ground for assembly, games and celebrations.</p></article>
+    <article><h3>Green Campus</h3><p>Trees and plants around the school, with regular plantation drives.</p></article>
+    <article><h3>Library & Computer Lab</h3><p>Add details if your school has these facilities.</p></article>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section">
+  <h2>Events & Competitions</h2>
+  <div class="cards">
+    <article><h3>Republic Day</h3><p>Flag hoisting, cultural programmes and prizes for achievers, with guests on stage.</p></article>
+    <article><h3>Independence Day</h3><p>Students dress as freedom fighters, Gandhi ji and Rani Laxmibai, and join the flag ceremony.</p></article>
+    <article><h3>Gandhi Jayanti</h3><p>Tribute to Mahatma Gandhi with speeches and flowers in class.</p></article>
+    <article><h3>Tree Plantation</h3><p>Every class plants and takes care of a sapling.</p></article>
+    <article><h3>Competitions</h3><p>Fancy dress, speech, drawing, quiz and dance. Add your own list.</p></article>
+    <article><h3>Annual Function</h3><p>Add the date and details of the next function.</p></article>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section id="sports" class="section alt">
+  <h2>Sports & Fitness</h2>
+  <p>Games build teamwork and health. Our ground is used for morning assembly, PT and sports day.</p>
+  <ul class="chips">
+    <li>Morning PT & Yoga</li><li>Cricket</li><li>Kabaddi</li><li>Kho-Kho</li>
+    <li>Races</li><li>Sports Day</li>
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>School Gallery</h2>
+  <p>Click any photo to see it bigger.</p>
+  <div class="gallery" id="gallery-grid"></div>
+  <p class="note">More photos and videos: see our
+    <a href="https://www.instagram.com/unique_central_school.1993?cplk=ZGJ2ODVkNnlvMWMw" target="_blank" rel="noopener">Instagram</a> and
+    <a href="https://youtube.com/@uniquecentralschool?si=tIvfBLk2YI2XOKpZ" target="_blank" rel="noopener">YouTube</a>.</p>
+</section>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<!-- ADMISSION -->
+<section id="admission" class="section alt">
+  <h2>Admission</h2>
+  <p>Admissions are open for N.C. to Class VIII. Visit the school office or call us. Bring the child’s birth certificate, Aadhaar card, previous school TC (if any) and 2 passport photos.</p>
+  <div class="btn-row"><a class="btn" href="tel:+917644083949">Call 76440 83949</a><a class="btn ghost" href="https://wa.me/917644083949" target="_blank" rel="noopener">WhatsApp</a></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <div class="two-col">
+    <div class="contact-info">
+      <p><strong>Address</strong><br>Unique Central School, Saraswati Lane, Kailuchak, Masaurhi (Patna), Bihar</p>
+      <p><strong>Phone</strong><br><a href="tel:+917644083949">+91 76440 83949</a></p>
+      <p><strong>Email</strong><br><a href="mailto:cpsingh7644083949@gmail.com">cpsingh7644083949@gmail.com</a></p>
+      <p><strong>Office hours</strong><br>Mon–Sat, 8:00 AM – 2:00 PM</p>
+      <div class="btn-row">
+        <a class="btn" href="https://www.instagram.com/unique_central_school.1993?cplk=ZGJ2ODVkNnlvMWMw" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn ghost" href="https://youtube.com/@uniquecentralschool?si=tIvfBLk2YI2XOKpZ" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Unique Central School location"
+        src="https://www.google.com/maps?q=Unique+Central+School+Kailuchak+Masaurhi+Patna&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="yr">2026</span> Unique Central School, Kailuchak, Masaurhi (Patna). All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const btn = document.getElementById('menuBtn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.addEventListener('click', e => { if (e.target.tagName === 'A') nav.classList.remove('open'); });
+
+  // ---------- Results ----------
+  const RESULTS = {"1":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","33","34","35","36","38","39","40","41","42","43","44","45","49","50","51","52"],"b":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"]},"3":{"a":["01","02","03","04","05","06","07","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","35","36","37","38","39","40","41","42","43","44","45","46"],"b":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"]},"5":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72"]},"8":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26"]},"lkg":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33"],"b":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"]},"nc":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","14","15","16","17","18","19","20","22","23","24","25"],"b":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"]},"ukg":{"a":["01","02","03","05","06","07","08","10","11","12","13","14","15","16","17","18","20","22","23","24","25","26","27","29","30","31","33","34"],"b":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","25","26","27","28","29","30"]},"7":{"a":["01","02","03","04","05","06","07","08","09","10","11","12","13","15","17","18","19","20","21","22","23","24","25","26","28","29","30","31","32","33","34","36","37","38"]},"6":{"a":["01","02","03","05","06","07","08","09","10","11","12","14","15","16","18","19","20","21","22","24","25","26","29","30","31","32","33","34","35","36","37","38","39","40","41","44","45","46","47","48"]}};
+  const CLASSES = [['nc','N.C.'],['lkg','L.K.G.'],['ukg','U.K.G.'],['1','Class I'],['2','Class II'],['3','Class III'],['4','Class IV'],['5','Class V'],['6','Class VI'],['7','Class VII'],['8','Class VIII']];
+  const rc = document.getElementById('resClass'), rs = document.getElementById('resSec'),
+        rr = document.getElementById('resRoll'), msg = document.getElementById('resMsg'),
+        view = document.getElementById('resView'), img = document.getElementById('resImg');
+  CLASSES.forEach(([v,t]) => rc.add(new Option(t, v)));
+  function fillSections() {
+    rs.innerHTML = '';
+    const secs = Object.keys(RESULTS[rc.value] || {});
+    (secs.length ? secs : ['a','b']).forEach(s => rs.add(new Option(s.toUpperCase(), s)));
+  }
+  rc.addEventListener('change', () => { fillSections(); view.hidden = true; msg.textContent = ''; });
+  fillSections();
+  function showResult() {
+    const rolls = (RESULTS[rc.value] || {})[rs.value];
+    const label = rc.options[rc.selectedIndex].text;
+    view.hidden = true;
+    if (!rolls) { msg.textContent = 'Result of ' + label + ' (Section ' + rs.value.toUpperCase() + ') is not uploaded yet. Please contact the school office.'; return; }
+    const n = rr.value.trim().replace(/^0+(?=\d)/, '');
+    if (!/^\d+$/.test(n)) { msg.textContent = 'Please enter the roll number.'; return; }
+    const roll = n.padStart(2, '0');
+    if (!rolls.includes(roll)) { msg.textContent = 'Roll No. ' + roll + ' was not found in ' + label + ' Section ' + rs.value.toUpperCase() + '. Please check and try again.'; return; }
+    const src = 'results/' + rc.value + '-' + rs.value + '-' + roll + '.jpg';
+    img.src = src; img.alt = 'Marksheet, ' + label + ' Section ' + rs.value.toUpperCase() + ', Roll No. ' + roll;
+    document.getElementById('resOpen').href = src;
+    view.hidden = false; msg.textContent = '';
+    view.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+  document.getElementById('resBtn').addEventListener('click', showResult);
+  rr.addEventListener('keydown', e => { if (e.key === 'Enter') showResult(); });
+  document.getElementById('resPrint').addEventListener('click', () => {
+    const w = window.open(img.src, '_blank'); if (w) w.addEventListener('load', () => w.print());
+  });
+
+  // ---------- Gallery: images/photo1.jpg se photo53.jpg tak ----------
+  const TOTAL = 53;
+  const grid = document.getElementById('gallery-grid');
+  for (let i = 1; i <= TOTAL; i++) {
+    const fig = document.createElement('figure');
+    const im = document.createElement('img');
+    im.src = 'images/photo' + i + '.jpg';
+    im.alt = 'School photo ' + i;
+    im.loading = 'lazy';
+    im.onerror = () => fig.remove();      // jo photo na mile, use chhod do
+    im.addEventListener('click', () => openLb(imgs().indexOf(im)));
+    fig.appendChild(im);
+    grid.appendChild(fig);
+  }
+
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  let cur = 0;
+  const imgs = () => [...grid.querySelectorAll('img')];
+  function show(i) {
+    const list = imgs(); cur = (i + list.length) % list.length;
+    lbImg.src = list[cur].src; lbImg.alt = lbCap.textContent = list[cur].alt;
+  }
+  function openLb(i) { show(i); lb.hidden = false; document.body.style.overflow = 'hidden'; }
+  function closeLb() { lb.hidden = true; document.body.style.overflow = ''; }
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', () => show(cur - 1));
+  document.getElementById('lbNext').addEventListener('click', () => show(cur + 1));
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') show(cur - 1);
+    if (e.key === 'ArrowRight') show(cur + 1);
+  });
+  let tx = null;
+  lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive:true});
+  lb.addEventListener('touchend', e => { if (tx === null) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) show(cur + (d < 0 ? 1 : -1)); tx = null; });
+</script>
+</body>
+</html>
